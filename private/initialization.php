@@ -17,5 +17,7 @@
     define("WWW_PATH","/shms/public/source");
 
     include_once("function.php");
+    include_once("database_connection.php");
+    include_once("authentication.php");
   
 ?>
