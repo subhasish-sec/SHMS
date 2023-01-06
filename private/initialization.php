@@ -1,14 +1,14 @@
 <?php
-
+ob_start();
    // get directory path
 
    //PATH LINK
    define("PATH",__FILE__);
    
-   //get private path (it will return C:\xampp\htdocs\shms\public)
+   //get private path (it will return C:\xampp\htdocs\shms\private)
    define("PRIVATE_PATH",dirname(PATH)); 
    
-   //get public path(it will return C:\xampp\htdocs\shms\private)
+   //get public path(it will return C:\xampp\htdocs\shms\public)
    define("PUBLIC_PATH",dirname(PRIVATE_PATH)."\public");
 
     // get document path

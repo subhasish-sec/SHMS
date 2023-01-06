@@ -13,9 +13,9 @@
                     <a href="#" class=""><i class="fe fe-user-plus"></i> <span> Doctor</span>
                         <span class="menu-arrow"></span></a>
                     <ul style="display: none">
+                        <li><a href="doctor.php">Doctor</a></li>
                         <li><a href="login.html"> All Doctors</a></li>
                         <li><a href="register.html">Appointments</a></li>
-                        <li><a href="forgot-password.html">Add Doctor</a></li>
                         <li><a href="specialization.php">Specialization</a></li>
                     </ul>
                 </li>

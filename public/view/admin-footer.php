@@ -15,7 +15,9 @@
  <!-- Custom JS -->
  <script src="<?php echo assetsUrl('admin/assets/js/script.js')?>"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+
  <script src="<?php echo assetsUrl('admin/assets/js/specialization.js')?>"></script>
+ <script src="<?php echo assetsUrl('admin/assets/js/doctor.js')?>"></script>
 
 
  </body>

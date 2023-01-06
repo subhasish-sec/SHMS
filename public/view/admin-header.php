@@ -2,16 +2,7 @@
     session_start();
     // if user not login then all pages can not access except login page
     is_not_login($_SESSION['action'],'index.php');
-
-//    echo "<pre>";
-//    print_r($_SERVER);
-    // echo $_SERVER['REQUEST_URI'];
-    // $dirs = explode('/', $_SERVER['REQUEST_URI']);
-    // echo $dirs[3];
-// Var_dump($dirs[3]);
-    
-    // die();
-    $page = pageTitle($_SERVER['REQUEST_URI']);
+    $page = pageTitle($_SERVER['PHP_SELF']);
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +12,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
-    <title><?php  echo $page;  ?></title>
+    <title><?php echo $page; ?></title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo assetsUrl('admin/assets/img/favicon.png')?>" />

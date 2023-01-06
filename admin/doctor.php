@@ -9,7 +9,7 @@ return substr($path,0,$endPoint);
 
 // TO INCLUDE THE INITIALIZATION.PHP
 include(getActualFilePath()."/private/initialization.php");
-// test($_SERVER['HTTP_REFERER']);
+
 // include header
 include(PUBLIC_PATH."/view/admin-header.php");
 // include sidebar
@@ -26,15 +26,15 @@ include(PUBLIC_PATH."/view/admin-sidebar.php");
         <div class="page-header">
             <div class="row">
                 <div class="col-sm-7 col-auto">
-                    <h3 class="page-title">Specialization</h3>
+                    <h3 class="page-title">Doctors</h3>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Specialities</li>
+                        <li class="breadcrumb-item active">Doctor</li>
                     </ul>
                 </div>
-                <div class="col-sm-5 col" id="specAddBtn">
-                    <a href="#Add_Specialities_details" data-toggle="modal"
-                        class="btn btn-primary float-right mt-2 specAddBtn">Add</a>
+                <div class="col-sm-5 col" id="docAddBtn">
+                    <a href="#add_doctor_modal" data-toggle="modal"
+                        class="btn btn-primary float-right mt-2 docAddBtn">Add</a>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@ include(PUBLIC_PATH."/view/admin-sidebar.php");
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-body">
-                        <div class="table-responsive" id='specDetailsTable'>
+                        <div class="table-responsive" id='docDetailsTable'>
 
                         </div>
                     </div>
@@ -55,17 +55,17 @@ include(PUBLIC_PATH."/view/admin-sidebar.php");
 <!-- /Page Wrapper -->
 
 <!-- specialization Add Modal -->
-<?php include('modals/specialization-add.php'); ?>
+<?php include('modals/doctor-add.php'); ?>
 
 <!-- /ADD Modal -->
 
 <!-- Edit Details Modal -->
-<?php include('modals/specialization-update.php'); ?>
+<?php include('modals/doctor-update.php'); ?>
 
 <!-- /Edit Details Modal -->
 
 <!-- Delete Modal -->
-<?php include('modals/specialization-del.php'); ?>
+<?php include('modals/doctor-del.php'); ?>
 <!-- /Delete Modal -->
 </div>
 <!-- /Main Wrapper -->

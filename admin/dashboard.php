@@ -12,6 +12,7 @@ include(getActualFilePath()."/private/initialization.php");
 
 // include header
 include(PUBLIC_PATH."/view/admin-header.php");
+
 // include sidebar
 include(PUBLIC_PATH."/view/admin-sidebar.php");
 ?>

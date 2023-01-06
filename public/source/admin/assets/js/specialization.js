@@ -1,5 +1,8 @@
 $(document).ready(function () {
-  loadDataTable();
+  var current_title = $(document).attr("title");
+  if (current_title === "Specialization") {
+    loadDataTable();
+  }
   // specialization add
   $("#specBtn").on("click", function (e) {
     e.preventDefault();
@@ -108,6 +111,7 @@ $(document).ready(function () {
             `<p class='alert alert-danger mt-3'>${obj["exits"]}</p>`
           );
         }
+        $("#docShowMsg > p").remove();
       },
     }); //end ajax
   });
@@ -137,8 +141,8 @@ $(document).ready(function () {
           toastr.success("Specialization successfully deleted ", "success", {
             timeOut: "5000",
           });
-          $(`#specDetailsTable #row_id-${delId}`).html("");
-          $(`#specDetailsTable #row_id-${delId}`).remove();
+          $("#specDetailsTable").html("");
+          loadDataTable();
         }
         console.log(obj);
       },

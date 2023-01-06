@@ -19,4 +19,5 @@ function getActualFilePath(){
     }else{
         redirect('dashboard.php'); // if req is not set the redirect to dashboard page
     }
+    
 ?>
